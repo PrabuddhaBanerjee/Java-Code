@@ -37,7 +37,7 @@ class LastWordLength{
      */
   public static void main(String[] args){
     // System.out.println(lengthOfLastWord("Hello World"));
-    System.out.println(lengthOfLastWord1Line("Hello World"));
+    System.out.println(lengthOfLastWord1Line(" "));
 
   }
 }
