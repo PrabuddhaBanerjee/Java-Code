@@ -10,6 +10,8 @@ public class SalesbyMatch {
 
     // Complete the sockMerchant function below.
     static int sockMerchant(int n, int[] ar) {
+        // Time Complexity: O(N^2)
+        // Space Cpmlexity: O(1)
         int count = 0;
         for(int i=0; i<n; i++){
             for(int j= n-1 ; j>i; j--){
@@ -18,6 +20,22 @@ public class SalesbyMatch {
                     ar[j] = 0;
                     break;
                 }
+            }
+        }
+        return count;
+    }
+
+    static int optimalSolution(int n, int[] ar){
+        // Time Complexity: O(N)
+        // Space Complexity: O(N)
+        Set<Integer> color = new HashSet<>();
+        int count = 0;
+        for(int i=0; i<n; i++){
+            if(!color.contains(ar[i])){
+                color.add(c[i]);
+            }
+            else{
+                count++;
             }
         }
         return count;
